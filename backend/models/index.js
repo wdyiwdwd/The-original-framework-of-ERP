@@ -27,7 +27,7 @@ var db   = require('../config').db;
 var sequelize = new Sequelize('mysql://localhost:3306/database', {})
 */
 
-exports.DB = new Sequelize(db.database, db.user, null, {
+exports.DB = new Sequelize(db.database, db.user, db.password, {
     host: db.host, // 数据库地址
     dialect: db.dialect, // 指定连接的数据库类型
     pool: db.pool
