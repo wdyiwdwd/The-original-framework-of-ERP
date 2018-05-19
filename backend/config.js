@@ -16,7 +16,7 @@ var config = {
   db: {
     host: 'localhost',
     dialect: 'mysql',
-    user: 'wdyiwdwd',
+    user: 'test',
     password: '',
     database: 'development',
     pool: {

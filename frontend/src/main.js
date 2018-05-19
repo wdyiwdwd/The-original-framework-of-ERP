@@ -10,6 +10,7 @@ import router from './router'
 import store from './store'
 import  VueResource  from 'vue-resource'
 import iView from 'iview'
+import 'iview/dist/styles/iview.css'
 import '../my-theme/index.less'
 
 Vue.use(VueResource)

@@ -7,7 +7,7 @@ var db = require('./index').DB;
 var Test = db.define('test', {
     name: {
         type: Sequelize.STRING, // 指定值的类型
-        field: 'nmae' // 指定存储在表中的键名称
+        field: 'name' // 指定存储在表中的键名称
     },
     // 没有指定 field，表中键名称则与对象键名相同，为 email
     email: {

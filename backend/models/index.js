@@ -35,5 +35,27 @@ exports.DB = new Sequelize(db.database, db.user, db.password, {
 
 console.log('database connection')
 
-
 exports.Test = require('./testdb');
+exports.MaterCate = require('./mater_cate');
+exports.Material = require('./material');
+exports.ProductCate = require('./product_cate');
+exports.Product = require('./product');
+exports.Consist = require('./consist');
+exports.Repertory = require('./repertory');
+exports.Stock = require('./stock');
+exports.Supplier = require('./supplier');
+exports.Role = require('./role');
+exports.User = require('./user');
+exports.Admin = require('./admin');
+exports.OfferList = require('./offer_list');
+exports.MinOrder = require('./min_order');
+exports.Offer = require('./offer');
+exports.Feature = require('./feature');
+exports.HasFeature = require('./has_feature');
+exports.IOList = require('./io_list');
+exports.IOItem = require('./io_item');
+exports.OrderList = require('./order_list');
+exports.Buy = require('./buy');
+exports.Station = require('./station');
+exports.GetList = require('./get_list');
+exports.Get = require('./get');
