@@ -7,7 +7,7 @@ import * as actions from './actions'
 import * as getters from './getters'
 import * as states from './states'
 import * as mutations from './mutations'
-import welcome from './modules/welcome'
+import testvuex from './modules/testmodules'
 
 Vue.use(Vuex)
 
@@ -21,7 +21,7 @@ export default new Vuex.Store({
   getters,
   mutations,
   modules: {
-    welcome,
+    testvuex,
   },
   strict: debug
 })

@@ -24,6 +24,6 @@ var Test = db.define('test', {
 // User.sync() 会创建表并且返回一个Promise对象
 // 如果 force = true 则会把存在的表（如果users表已存在）先销毁再创建表
 // 默认情况下 forse = false
-var test = Test.sync({ force: false });
+var test = Test.sync({ force: true });
 
 module.exports = Test; 

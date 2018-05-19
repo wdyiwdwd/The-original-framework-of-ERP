@@ -7,5 +7,7 @@ exports.testapi = function(req, res) {
 	console.log(req.session.sess)
 	req.session.sess = 'yes';
 	Test.addTest();
-  	res.send("yes");
+	Test.findAll(function(data) {
+		res.send(data)
+	})
 }

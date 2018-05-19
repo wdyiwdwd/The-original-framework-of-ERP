@@ -11,6 +11,8 @@ exports.addTest = function() {
 };
 
 // 通过用户名查找用户
-exports.findByName = function() {
-    return Test.findOne({ where: { name: 'okok' } });
+exports.findAll = function(dosomething) {
+    Test.findAll().then(function(tests){
+    	dosomething(tests);
+    });
 };
